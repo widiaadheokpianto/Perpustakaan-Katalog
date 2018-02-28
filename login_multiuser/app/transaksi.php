@@ -39,6 +39,7 @@
 </div>
 
 <p><b>Note : </b>Menu di atas merupakan control panel transaksi peminjaman buku, hanya admin yang diizinkan menggunakannya, mahasiswa hanya diperbolehkan meminjam buku perpustakaan maksimal 2 buku dengan batas peminjaman 7 hari, bila lewat dari batas peminjaman akan diberikan denda Rp.500/hari.</p>
+<p><b>Note : </b>Menu di atas merupakan control panel transaksi peminjaman buku, hanya admin yang diizinkan menggunakannya, mahasiswa hanya diperbolehkan meminjam buku perpustakaan maksimal 2 buku dengan batas peminjaman 7 hari, bila lewat dari batas peminjaman akan diberikan denda Rp.500/hari.</p>
 <?php 
 }else{
 echo '<div class="alert alert-error"> Maaf Anda Harus Login terlebih dahulu untuk mengakses halaman ini </div>';
