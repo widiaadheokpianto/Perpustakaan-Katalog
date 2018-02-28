@@ -68,7 +68,7 @@ die ('');
 	mysql_connect("localhost","root","")or die(mysql_error());
 	mysql_select_db("project_perpustakaan") or die(mysql_error());
 	?>
-	<table class="table table-striped table-hover " style="width:1px;">
+	<table class="table table-striped table-hover " style="width:5px;">
 	    <tr>
 	        <td>Jumlah</td>
 	        <td>
