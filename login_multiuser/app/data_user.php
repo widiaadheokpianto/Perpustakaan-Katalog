@@ -61,14 +61,14 @@ die ('');
 				<td align="center"><?php echo $data['email'] ?></td>
 				<td align="center"><?php echo $data['hp'] ?></td>
 				<?php if($_SESSION['level']=='admin'){?>
-				<td>
+				<td align="center">
 					<a href="app/edit_user.php?username=<?php echo $data['username'] ?>">
 						<button type="button" class="btn btn-info btn-xs">
 							<span class="glyphicon glyphicon-edit"></span> Edit
 						</button>
 					</a>
 				</td>
-				<td>
+				<td align="center">
 					<a href="app/hapus_user.php?username=<?php echo $data['username'] ?>" onClick="return confirm('Delete mahasiswa dengan NIM : <?php echo $data['username'];?>');">
 						<button type="button" class="btn btn-danger btn-xs">
 							<span class="glyphicon glyphicon-trash"></span> Delete
