@@ -15,7 +15,7 @@
 
 	<?php } ?>
 
-	<h2><img src="../catatan.png" width="50" height="50"/> Transaksi Perpustakaan</h2>
+	<p class="lead"><img src="../catatan.png" width="50" height="50"/> Transaksi Perpustakaan</p>
 
 	<p>
 		<a href="http://localhost/walah/login_multiuser/app/data_transaksi.php">

@@ -15,7 +15,7 @@ die ('');
 
 <?php } ?>
 
-<img src="../money.png" width="50" height="50" style="float:left; margin:0 9px 3px 0;" /><legend>Data Kas Perpustakaan</legend></h3>
+<p class="lead" align="center"><img src="../money.png" width="50" height="50"/>Data Kas Perpustakaan</p>
 
 <p>
 	<a href="http://localhost/walah/login_multiuser/app/input_kas.php">
