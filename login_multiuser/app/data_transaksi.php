@@ -118,7 +118,7 @@ die ('');
 		<span class="glyphicon glyphicon-print"></span> Print
 	</a>
 
-	<a href="http://localhost/Project/login_multiuser/homeadmin.php?app=transaksi" class="btn btn-primary">
+	<a href="http://localhost/walah/login_multiuser/homeadmin.php?app=transaksi" class="btn btn-primary">
 		<span class="glyphicon glyphicon-list-alt"></span> Transaksi
 	</a>
 </div>
