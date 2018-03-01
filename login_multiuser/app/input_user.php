@@ -37,7 +37,7 @@ die ('');
 <?php } ?>
 
 <div class="container page-header">
-	<h1><img src="../../user.png" width="50" height="50"/> Daftar Akun Siswa Perpustakaan - Admin </h1>
+	<h2><img src="../../user.png" width="50" height="50"/> Daftar Akun Siswa Perpustakaan - Admin </h2>
 </div>
 
 <div class="jumbotron container" align="center" >
