@@ -23,7 +23,7 @@ die ('');
 			<span class="glyphicon glyphicon-pencil"></span> Input Kas
 		</button>
 	</a> 
-	<a href="http://localhost/Project/login_multiuser/app/pdf_data_kas.php">
+	<a href="http://localhost/walah/login_multiuser/app/pdf_data_kas.php">
 		<button type="button" class="btn btn-info">
 			<span class="glyphicon glyphicon-print"></span> Print Kas
 		</button>

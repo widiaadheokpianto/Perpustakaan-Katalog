@@ -6,7 +6,7 @@
 
 <body>
 
-<div class="jumbotron">
+<div class="jumbotron" align="center">
 	
 	<?php if($_SESSION['level']!='admin'){
 	echo '<div class="alert alert-error"> Maaf Anda Harus Login sebagai level Admin terlebih dahulu untuk mengakses halaman ini </div>';//jika bukan admin jangan lanjut
@@ -15,7 +15,7 @@
 
 	<?php } ?>
 
-	<img src="../catatan.png" width="50" height="50" style="float:left; margin:0 9px 3px 0;" /><legend>Transaksi Perpustakaan</legend></h3>
+	<h2><img src="../catatan.png" width="50" height="50"/> Transaksi Perpustakaan</h2>
 
 	<p>
 		<a href="http://localhost/walah/login_multiuser/app/data_transaksi.php">
