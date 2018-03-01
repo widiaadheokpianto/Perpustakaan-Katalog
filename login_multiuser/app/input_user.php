@@ -26,49 +26,6 @@ isset ($_GET['app']) ? $app = $_GET['app'] : $app = 'admin';
 	<script type="text/javascript" src="<?php echo $base_url;?>asset/js/jquery.js"></script>
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-<style type="text/css">
-      html, body {
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-      }
-
-      #full-screen-background-image {
-        z-index: -999;
-        min-height: 100%;
-        min-width: 1024px;
-        width: 100%;
-        height: auto;
-        position: fixed;
-        top: 0;
-        left: 0;
-      }
-
-      #wrapper {
-  	  width: 1000px;
-      margin: auto;
-      background-color:rgba(255,255,255,0.9);
-      border-radius: 50px;
-      }
-
-      a:link, a:visited, a:hover {
-        color: #333;
-        font-style: italic;
-      }
-
-      a.to-top:link,
-      a.to-top:visited, 
-      a.to-top:hover {
-        margin-top: 1000px;
-        display: block;
-        font-weight: bold;
-        padding-bottom: 30px;
-        font-size: 30px;
-      }
-
-    </style>
-
 </head>
 <body>
 
@@ -79,36 +36,40 @@ die ('');
 
 <?php } ?>
 
-<div class="jumbotron container" >
+<div class="container page-header">
+	<h1><img src="../../user.png" width="50" height="50"/> Daftar Akun Siswa Perpustakaan - Admin </h1>
+</div>
+
+<div class="jumbotron container" align="center" >
 	<form class="form-horizontal" action="simpan_user.php" method="post">
 		<fieldset>
-			<legend></legend>
+			<legend>Formulir Input Data Siswa SMK Grafika Bakti Nusantara</legend>
 
 			<div class="form-group">
 		      <label class="col-lg-2 control-label">NPM</label>
-		      <div class="col-lg-5">
-		        <input type="text" class="form-control" name="username" placeholder="NPM">
+		      <div class="col-lg-6">
+		        <input type="text" class="form-control" name="username" placeholder="NPM" required="required">
 		      </div>
 		    </div>
 
 		    <div class="form-group">
 		      <label class="col-lg-2 control-label">Password</label>
-		      <div class="col-lg-5">
-		        <input type="password" class="form-control" name="password" placeholder="Password">
+		      <div class="col-lg-6">
+		        <input type="password" class="form-control" name="password" placeholder="Password" required="required">
 		      </div>
 		    </div>
 
 		    <div class="form-group">
 		      <label class="col-lg-2 control-label">Nama Lengkap</label>
-		      <div class="col-lg-5">
-		        <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap">
+		      <div class="col-lg-6">
+		        <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap" required="required">
 		      </div>
 		    </div>
 
 		    <div class="form-group">
 		      <label class="col-lg-2 control-label">Jenis Kelamin</label>
-		      <div class="col-lg-5">
-		        <select class="form-control" type="text" name="jk">
+		      <div class="col-lg-6">
+		        <select class="form-control" type="text" name="jk" required="required">
 		          <option> </option>
 		          <option>L</option>
 		          <option>P</option>
@@ -118,22 +79,22 @@ die ('');
 
 		    <div class="form-group">
 		      <label class="col-lg-2 control-label">Tempat Lahir</label>
-		      <div class="col-lg-5">
-		        <input type="text" class="form-control" name="tempat" placeholder="Tempat Lahir">
+		      <div class="col-lg-6">
+		        <input type="text" class="form-control" name="tempat" placeholder="Tempat Lahir" required="required">
 		      </div>
 		    </div>
 
 		    <div class="form-group">
 		      <label class="col-lg-2 control-label">Tanggal Lahir</label>
-		      <div class="col-lg-5">
-		        <input type="text" id="datepicker" class="form-control input" name="lahir" placeholder="dd-mm-yyyy" >
+		      <div class="col-lg-6">
+		        <input type="text" id="datepicker" class="form-control input" name="lahir" placeholder="dd-mm-yyyy" required="required">
 		      </div>
 		    </div>
 
 		    <div class="form-group">
 		      <label class="col-lg-2 control-label">Fakultas</label>
-		      <div class="col-lg-5">
-		        <select class="form-control" type="text" name="fakultas">
+		      <div class="col-lg-6">
+		        <select class="form-control" type="text" name="fakultas" required="required">
 		          <option> </option>	
 				  <option>Fakultas Hukum</option>
 				  <option>Fakultas Teknik</option>
@@ -149,8 +110,8 @@ die ('');
 
 		    <div class="form-group">
 		      <label class="col-lg-2 control-label">Program Studi</label>
-		      <div class="col-lg-5">
-		        <select class="form-control" type="text" name="jurusan">
+		      <div class="col-lg-6">
+		        <select class="form-control" type="text" name="jurusan" required="required">
 		          	<option> </option>	
 					<option>Ilmu Hukum S-1</option>
 					<option>Pascasarjana Magister Manajemen</option>
@@ -174,12 +135,67 @@ die ('');
 		      </div>
 		    </div>
 
+		    <div class="form-group">
+		      <label class="col-lg-2 control-label">Tahun Angkatan</label>
+		      <div class="col-lg-6">
+		        <input type="text" class="form-control" name="tahun" placeholder="Tahun Angkatan" required="required">
+		      </div>
+		    </div>
+
+		    <div class="form-group">
+		      <label class="col-lg-2 control-label">Alamat</label>
+		      <div class="col-lg-6">
+		        <input type="text" class="form-control" name="alamat" placeholder="Alamat" required="required">
+		      </div>
+		    </div>
+
+		    <div class="form-group">
+		      <label class="col-lg-2 control-label">Email</label>
+		      <div class="col-lg-6">
+		        <input type="text" class="form-control" name="email" placeholder="Email" required="required">
+		      </div>
+		    </div>
+
+		    <div class="form-group">
+		      <label class="col-lg-2 control-label">Nomor Handphone</label>
+		      <div class="col-lg-6">
+		        <input type="text" class="form-control" name="hp" placeholder="Nomor Handphone" required="required">
+		      </div>
+		    </div>
+
+		    <div class="form-group">
+		      <label class="col-lg-2 control-label">Pilih File Foto</label>
+		      <div class="col-lg-6">
+		        <input type="file" class="form-control" name="foto">
+		      </div>
+		    </div>
+
+		    <div class="form-group">
+		      <label class="col-lg-2 control-label">Level</label>
+		      <div class="col-lg-6">
+		        <select class="form-control" type="text" name="level" required="required">
+		          <option> </option>
+		          <option>Admin</option>
+		          <option>User</option>
+		        </select>
+		      </div>
+		    </div>
+
+		    <button type="submit" value="Simpan" class="btn btn-success">
+		    	<span class="glyphicon glyphicon-floppy-save"></span> Simpan
+		    </button>
+
+		    <button type="reset" value="Reset" class="btn btn-danger" onclick="return confirm('Reset data yang telah dimasukan?')">
+		    	<span class="glyphicon glyphicon-refresh"></span> Reset
+		    </button>
 
 		</fieldset>
 	</form>
 </div>
 
-<div id="wrapper">
+
+
+<!-- <div id="wrapper">
 <div class="page-header"><h3><img src="../../mhs.png" width="50" height="50" /> Daftar Akun Mahasiswa Perpustakaan - Admin</div>
 </div>
   
@@ -308,7 +324,7 @@ die ('');
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
     <script> 
     //options method for call datepicker
