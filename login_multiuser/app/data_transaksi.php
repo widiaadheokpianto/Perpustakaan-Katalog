@@ -52,19 +52,19 @@ die ('');
 	<table class="table table-striped table-hover">
 		<thead>
 			<tr class="danger">
-        	<td align="center">No</td>
-		    <td align="center">Judul Buku</td>
-			<td align="center">ID Buku</td>
-			<td align="center">Nama Peminjam</td>
-			<td align="center">ID Peminjam</td>
-			<td align="center">Tgl. Pinjam</td>
-			<td align="center">Tgl. Kembali</td>
-			<td align="center">Status</td>
-			<td align="center">Keterangan</td>
-			<td align="center">Terlambat</td>
-			<td align="center">Kembali</td>
-			<td align="center">Perpanjang</td>
-	    </tr>
+	        	<td align="center">No</td>
+			    <td align="center">Judul Buku</td>
+				<td align="center">ID Buku</td>
+				<td align="center">Nama Peminjam</td>
+				<td align="center">ID Peminjam</td>
+				<td align="center">Tgl. Pinjam</td>
+				<td align="center">Tgl. Kembali</td>
+				<td align="center">Status</td>
+				<td align="center">Keterangan</td>
+				<td align="center">Terlambat</td>
+				<td align="center">Kembali</td>
+				<td align="center">Perpanjang</td>
+	    	</tr>
 		</thead>
 		<tbody>
 		<?php
