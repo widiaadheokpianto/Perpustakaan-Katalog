@@ -4,7 +4,7 @@ session_start();
 //untuk "login_multiuser" bisa diganti dan sesuaikan dengan folder project
 //tujuan seperti dibuat menggunakan $_SERVER['HTTP_HOST'] agar hostname berubah sendiri secara dinamis
 
-$base_url = 'http://'.$_SERVER['HTTP_HOST'].'/Project/login_multiuser/';
+$base_url = 'http://'.$_SERVER['HTTP_HOST'].'/walah/login_multiuser/';
 
 isset ($_GET['app']) ? $app = $_GET['app'] : $app = 'admin';
 
@@ -23,18 +23,15 @@ $query=mysql_query("SELECT * FROM transaksi ORDER BY id_transaksi", $konek);
 	<meta charset="utf-8">
 	<title>History Transaksi</title>
 	<link href="<?php echo $base_url;?>asset/css/bootstrap.min.css" rel="stylesheet">
-	<link href="<?php echo $base_url;?>asset/css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link href="<?php echo $base_url;?>asset/css/style.css" rel="stylesheet">
-	
-    <link href="<?php echo $base_url;?>asset/css/datepicker2.css" rel="stylesheet">
-	
-	<link rel="shortcut icon" href="<?php echo $base_url;?>asset/img/book.ico">
-	<script type="text/javascript" src="<?php echo $base_url;?>asset/js/jquery.min.js"></script>
-	<script type="text/javascript" src="<?php echo $base_url;?>asset/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo $base_url;?>asset/js/scripts.js"></script>
-	
-    <script type="text/javascript" src="<?php echo $base_url;?>asset/js/jquery.js"></script>
-    <script type="text/javascript" src="<?php echo $base_url;?>asset/js/bootstrap-datepicker2.js"></script>
+  <link href="<?php echo $base_url;?>asset/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="<?php echo $base_url;?>asset/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="<?php echo $base_url;?>asset/css/bootstrap.css" rel="stylesheet">
+  <script type="text/javascript" src="<?php echo $base_url;?>asset/js/bootstrap.js"></script>
+  <script type="text/javascript" src="<?php echo $base_url;?>asset/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="<?php echo $base_url;?>asset/js/npm.js"></script>
+  <script type="text/javascript" src="<?php echo $base_url;?>asset/js/jquery.min.js"></script>
+  <script type="text/javascript" src="<?php echo $base_url;?>asset/js/jquery.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 <style type="text/css">
       html, body {
