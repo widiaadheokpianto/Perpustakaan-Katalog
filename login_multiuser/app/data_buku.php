@@ -15,7 +15,7 @@ die ('');
 
 <div class="jumbotron">
 	<p>
-		<a href="http://localhost/Project/login_multiuser/app/input_buku.php">
+		<a href="http://localhost/Walah/login_multiuser/app/input_buku.php">
 			<button type="button" class="btn btn-success">
 				<span class="glyphicon glyphicon-pencil"></span> Tambah Data Buku
 			</button>
