@@ -38,50 +38,6 @@ isset ($_GET['app']) ? $app = $_GET['app'] : $app = 'admin';
   <script type="text/javascript" src="<?php echo $base_url;?>asset/js/jquery.min.js"></script>
   <script type="text/javascript" src="<?php echo $base_url;?>asset/js/jquery.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-<style type="text/css">
-      html, body {
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-      }
-
-      #full-screen-background-image {
-        z-index: -999;
-        min-height: 100%;
-        min-width: 1024px;
-        width: 100%;
-        height: auto;
-        position: fixed;
-        top: 0;
-        left: 0;
-      }
-
-      #wrapper {
-  	  width: 1000px;
-      margin: auto;
-      background-color:rgba(255,255,255,0.9);
-      border-radius: 50px;
-      }
-
-      a:link, a:visited, a:hover {
-        color: #333;
-        font-style: italic;
-      }
-
-      a.to-top:link,
-      a.to-top:visited, 
-      a.to-top:hover {
-        margin-top: 1000px;
-        display: block;
-        font-weight: bold;
-        padding-bottom: 30px;
-        font-size: 30px;
-      }
-
-    </style>
-
 </head>
 <body>
 
@@ -161,68 +117,6 @@ die ('');
 
     </fieldset>
   </form>
-</div>
-
-<div id="wrapper">
-<div class="page-header"><h3><img src="../../book2.png" width="50" height="50" /> Edit Data Buku Perpustakaan - Admin</div>
-</div>
-
-<img src="../../buku.jpg" id="full-screen-background-image" />
-  
-<div id="wrapper">
-	<div class="container-fluid">
-		<div class="row-fluid">
-			<div class="span12">
-
-<fieldset style="width: 100%; margin: auto;">
-<legend>Formulir Edit Data Buku Perpustakaan</legend>
-    
-    <form action="edit_buku_action.php" method="post">
-        <input type="hidden" name="id_buku" value="<?php echo $id; ?>" />
-		
-		<p>
-            Judul Buku<br />
-            <input type="text" name="judul" required="required" value="<?php echo $data['judul']; ?>"/>
-        </p>
-		
-        <p>
-            Tahun Terbit<br />
-            <input type="text" name="terbit" required="required" value="<?php echo $data['terbit']; ?>"/>
-        </p>
-		
-		<p>
-            Penerbit<br />
-            <input type="text" name="penerbit" required="required" value="<?php echo $data['penerbit']; ?>"/>
-        </p>
-        
-		<p>
-            Jumlah Halaman<br />
-            <input type="text" name="halaman" required="required" value="<?php echo $data['halaman']; ?>"/>
-        </p>
-		
-		<p>
-            Jumlah Buku<br />
-            <input type="text" name="jumlah" required="required" value="<?php echo $data['jumlah']; ?>"/>
-        </p>
-        
-		<p>
-            Asal Buku<br />
-            <input type="text" name="peroleh" required="required" value="<?php echo $data['peroleh']; ?>"/>
-        </p>
-		
-		<label class="control-label"> Tanggal Update </label>
-            <input type="text" id="datepicker" name="tanggal" class="input" value="<?php echo $data['tanggal']; ?>"/>
-        </p>	
-		
-        <p>
-            <input type="submit" value="Simpan" />
-            <input type="reset" value="Reset" onclick="return confirm('Reset data yang telah diedit?')">
-        </p>
-    </form>
-</fieldset>
-			</div>
-		</div>
-	</div>
 </div>
 
     <script> 
