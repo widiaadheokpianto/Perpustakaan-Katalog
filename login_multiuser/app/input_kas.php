@@ -30,49 +30,7 @@ $sekarang = date("d-m-Y");
   <script type="text/javascript" src="<?php echo $base_url;?>asset/js/jquery.min.js"></script>
   <script type="text/javascript" src="<?php echo $base_url;?>asset/js/jquery.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<!-- 
-<style type="text/css">
-      html, body {
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-      }
 
-      #full-screen-background-image {
-        z-index: -999;
-        min-height: 100%;
-        min-width: 1024px;
-        width: 100%;
-        height: auto;
-        position: fixed;
-        top: 0;
-        left: 0;
-      }
-
-      #wrapper {
-  	  width: 1000px;
-      margin: auto;
-      background-color:rgba(255,255,255,0.9);
-      border-radius: 50px;
-      }
-
-      a:link, a:visited, a:hover {
-        color: #333;
-        font-style: italic;
-      }
-
-      a.to-top:link,
-      a.to-top:visited, 
-      a.to-top:hover {
-        margin-top: 1000px;
-        display: block;
-        font-weight: bold;
-        padding-bottom: 30px;
-        font-size: 30px;
-      }
-
-    </style> -->
 
 </head>
 <body>
@@ -127,49 +85,5 @@ die ('');
     </fieldset>
   </form>
 </div>
-<!-- 
-<div id="wrapper">
-<div class="page-header"><h3><img src="../../uang.png" width="50" height="50" /> Input Data Kas Perpustakaan</div>
-</div> -->
-  
-  <img src="../../kas.jpg" id="full-screen-background-image" />
-  
-<div id="wrapper">
-	<div class="container-fluid">
-		<div class="row-fluid">
-			<div class="span12">
-			
-<fieldset style="width: 100%; margin: auto;">
-<legend>Formulir Input Kas</legend>
-<form action="simpan_kas.php" method="post">
-<input type="hidden" name="tgl" value="<?php echo $sekarang; ?>">
-		
-		<p>
-            ID Kas<br />
-            <input type="text" name="id_kas" required="required" disabled="disabled"/>
-        </p>
-		
-        <p>
-            Tanggal Pembayaran<br />
-            <b><?php echo $sekarang; ?></b>
-        </p>
-		
-		<p>
-            Denda<br />
-            <input type="text" name="denda" required="required" />
-        </p>
-		
-        <p>
-            <input type="submit" value="Simpan" />
-            <input type="reset" value="Reset" onclick="return confirm('Reset data yang telah dimasukan?')">
-        </p>
-    </form>
-	
-</fieldset>
-			</div>
-		</div>
-	</div>
-</div>
-	
 </body>
 </html>
